@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService2", "WcfService2\WcfService2.csproj", "{4C0794C4-FBF6-479F-A69A-0FBE25228217}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B4C2E0C-136D-40FA-8659-12695E8C50E7} = {5B4C2E0C-136D-40FA-8659-12695E8C50E7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject1", "NUnitTestProject1\NUnitTestProject1.csproj", "{5B4C2E0C-136D-40FA-8659-12695E8C50E7}"
 EndProject
