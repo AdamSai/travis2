@@ -1,8 +1,8 @@
 language: csharp
+mono: none
+dotnet: 2.1.502
 solution: WcfService2.sln
 install:
-  - nuget restore WcfService2.sln
-  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+  - dotnet restore
 script:
-  - msbuild /p:Configuration=Release WcfService2.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./NUnitTestProject1/bin/Release/netcoreapp3.1/NUnitTestProject1.dll
+  - dotnet test
