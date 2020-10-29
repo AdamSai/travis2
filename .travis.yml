@@ -5,5 +5,4 @@ solution: WcfService2.sln
 install:
   - dotnet restore
 script:
-  - chmod a+x ./build.sh && ./build.sh
   - dotnet test
